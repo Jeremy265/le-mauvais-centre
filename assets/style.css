@@ -1,0 +1,386 @@
+/*SLIDESHOW PROMOTION*/
+
+@keyframes slideShow {
+	0%, 15%,100% {
+		left: 0px; 
+	}
+	35%, 50% {
+		left: -500px; 
+	}
+	70%, 85% {
+		left: -1000px; 
+	}
+}
+#slideshow {
+	position: relative;
+	width:500px;
+	height: 400px;
+	margin:  20px auto;
+	overflow: hidden;
+}
+#sContent li {
+	display: inline;
+}
+#sContent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1550px;
+	margin: 0;            
+	padding: 0;
+	animation-name: slideShow;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+/*PAGE EN CONSTRUCTION et CODEPROMO*/
+
+#pageInexistante h1{
+	font-size:500%;
+	text-align:center;
+	color:red;
+}
+
+#pageInexistante a{
+	color:green;
+}
+
+#pageInexistante {
+	text-align:center;
+}
+
+/* ACCUEIL */
+
+body{
+	margin: 0;
+}
+
+a.link{
+	 text-decoration:none;
+	 color:white;
+ }
+ 
+a:hover{
+	text-decoration:underline;
+}
+
+#header{
+	background-image:url("images/fondTitre.jpg");
+	width:100%;
+	display:inline-flex;
+	text-align:center;
+	color:white;
+	text-shadow: 0 0 10px black;
+}
+
+#header h1{
+	font-size:300%;
+	display:inline;
+}
+#header h2{
+	width:100%;
+	display:inline-block;
+}
+
+.logoHeader{
+	width:20%;
+	float:left;
+	margin:5px;
+}
+
+.compte,.panier{
+	margin-top:2em;
+	width:10%;
+	display:inline;
+}
+	
+.price{
+	color:yellow;
+	font-weight:bold;
+}
+
+#menu table{
+	background-color:DodgerBlue;
+	text-align:left;
+	width:100%;
+}
+
+#accueil, #tireBouchon, #decapsuleur, #catalogue{
+	height:1.2em;
+	overflow:hidden;
+}
+
+#accueil br+a, #tireBouchon br+a, #decapsuleur br+a, #catalogue br+a{
+	color:black;
+	padding:1px;
+}
+#accueil:hover, #tireBouchon:hover, #decapsuleur:hover, #catalogue:hover{
+	height:5em;	
+	overflow:visible;
+	margin-bottom:150px;
+}
+#menu input{
+	width:50%;
+	float:right;
+	margin-right:10px;
+}
+
+#menu img{
+	width:3%;
+	float:right;
+	padding-right:10px;
+}
+
+#promotion{
+	 border:2px solid red;
+	 margin:5em;
+	 width:500px;
+	 display:inline-block;
+ }
+ 
+#promotion>h2{
+	 background-color:red;
+	 color:white;
+	 position:relative; top:-22px;
+	 font-variant:SMALL-CAPS;
+	 text-align:center;
+ }
+  
+#pereNoel{
+	text-align:center;
+	margin:2em;
+	float:right;
+}
+#pereNoel>img{
+	width:60%;
+}
+#pereNoel h1{
+	font-size:300%;
+	color:red;
+}
+#pereNoel h2{
+	font-size:130%;
+}
+
+
+#bas{
+	background-color:black;	
+	margin-top:15em;
+	width:100%;
+}
+
+#bas td{
+	padding:1em;
+}
+
+/* ARTICLE */
+
+#article{
+	margin-left:10px;
+}
+
+#article h1{
+	font-size:250%;
+	font-variant:small-caps;
+	font-weight:bolder;
+}
+
+#article h2{
+	color:Blue;
+}
+#article img{
+	width:20%;
+}
+
+#prix{
+	display:flex;
+	flex-direction:column;
+	float:right;
+	width:70%;
+}
+
+#prix a{
+	margin-left:10px;
+	margin-top:20px;
+	color:black;
+}
+.oldPrice{
+	text-decoration:line-through;
+}
+.newPrice{
+	color:red;
+	font-size:200%;
+}
+
+.ajouterPanier{
+	margin-top:15px;
+	background-color:Green;
+	color:white;
+	font-size:150%;
+	border-radius:20px;
+	padding:10px;
+}
+
+#commentaire div, #commentaire button{
+	margin:10px;
+}
+
+/*PANIER*/
+
+#panier h1{
+	color:Blue;
+	font-size:200%;
+}
+table#progression{
+	text-align:center;
+	width:100%;
+	background:Gainsboro ;
+}
+
+#imagePanier{
+	width:20%;
+}
+
+.number{
+	padding:0px 5px 0px 5px;
+	background:DarkGrey;
+	border-radius:10px;
+}
+span#enCours{
+	background:LimeGreen ;
+	border:2px solid LimeGreen;
+}
+
+#panier img{
+	width:30%;
+}
+#articles{
+	display:flex;
+	text-align:center;
+	width:90%;
+}
+#articles td+td{
+	border-left:1px solid Grey;
+	padding:0px 25px 0px 25px;
+}
+#continuer{
+	margin-top:5em;
+	margin-bottom:15em;
+}
+.continue{
+	background-color:Green;
+	color:white;
+	font-size:150%;
+	border-radius:20px;
+	padding:10px;
+}
+
+
+/*VALIDATION COMMANDE*/
+
+#validation h1{
+	color:Blue;
+	font-size:200%;
+}
+
+#cooLiv, #cooBan, #choixLiv{
+	display:inline-flex;
+	flex-direction:column;
+	margin-left:15%;
+}
+
+
+#cooLiv input, #cooBan input{
+	display:flex;
+	margin:1em;
+}
+
+#confirmer{
+	margin-top:5em;
+}
+	
+#confirmer a{
+	color:black;
+}
+
+/* RECHERCHE */
+
+.vignette img{
+	margin-left:50px;
+}
+.vignette{
+	width:25%;
+}
+.description{
+	width:45% ;
+}
+.prix{
+	width:10%;
+}
+.dispo, .redirection{
+	width:10%;
+}
+
+#diffarticles img{
+	width:40%;
+}
+
+
+select#tri{
+	float:right;
+	margin-right:50px;
+}
+
+#recherche h1{
+	font-size:30px;
+	text-align:center;
+}
+
+.gotodetail{
+	font-size:110%;
+	font-weight:bolder;
+	font-variant:small-caps;
+	color:red;
+}
+
+#diffarticles td em{
+	font-style:normal;
+	border-radius:20px;
+	background-color:#83DB8E;
+	color:green;
+	font-weight:bold;
+	font-variant:small-caps;
+	padding:5px;
+}
+
+/*CONFIRMATION COMMANDE */
+
+#confirmeCommande{
+	margin:5em;
+	text-align:center;
+}
+#confirmeCommande h1{
+	color:red;
+	font-size:300%;
+}
+#confirmeCommande a{
+	color:black;
+}
+
+
+/* QUI SOMMES NOUS */
+#qsn{
+	margin:1em;
+	font-size:15pt;
+}
+#qsn em:hover{
+	text-decoration:underline;
+}
+#qsn h1{
+	font-size:55pt;
+	color:blue;
+}
+#qsn h2{
+	text-decoration:underline;
+}
